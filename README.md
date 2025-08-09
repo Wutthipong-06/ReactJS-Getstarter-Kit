@@ -34,7 +34,7 @@ powershell -c "irm bun.sh/install.ps1 | iex"
 
 1. **โคลนโปรเจค**
 ```bash
-git clone https://github.com/your-username/getstarter-kit.git
+git clone https://github.com/Wutthipong-06/getstarter-kit.git
 cd getstarter-kit
 ```
 
@@ -63,9 +63,7 @@ module.exports = {
 ```
 และเพิ่มในไฟล์ `src/index.css`:
 ```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 ```
 
 4. **รันโหมดพัฒนา**
@@ -93,12 +91,11 @@ getstarter-kit/
 │   ├── components/      # UI Components
 │   ├── pages/           # หน้าเพจหลัก
 │   ├── styles/          # ไฟล์ CSS/Tailwind config
-│   ├── App.jsx          # Root component
-│   └── main.jsx         # Entry point
+│   ├── App.tsx          # Root component
+│   └── main.tsx         # Entry point
 ├── public/              # Static assets
 ├── package.json
-├── bun.lockb
-└── tailwind.config.js
+└── bun.lockb
 ```
 
 ---
@@ -112,6 +109,3 @@ getstarter-kit/
 - ✅ โครงสร้างโปรเจคชัดเจน พร้อมต่อยอด
 
 ---
-
-## 📄 License
-MIT License © 2025 [Wutthipong-06]
